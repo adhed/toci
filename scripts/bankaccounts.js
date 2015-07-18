@@ -23,7 +23,8 @@ function checkBankFromNumber(num) {
 function validate() {
     var accountNumber, length, text;
 
-    accountNumber = document.getElementById("account_number").value; //
+    accountNumber = document.getElementById("account_number").value;
+    accountNumber = accountNumber.replace(/\s+/g, '');
     length = accountNumber.length;
     text = "Account number is invalid";
 
