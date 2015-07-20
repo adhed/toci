@@ -6,7 +6,7 @@ var bankDictionary = {}; // Bank dictionary with number and bank names
 
 // Load unique number and bank names from JSON file
 function loadBankDictionary() {
-    jQuery.getJSON("http://www.leniwiec.vot.pl/TOCI/scripts/banksList.json").done(function (data) {
+    jQuery.getJSON("http://leniwiec.vot.pl/TOCI/scripts/banksList.json").done(function (data) {
         $.each(data, function () {
             bankDictionary[this.number] = this.bank;
         });
