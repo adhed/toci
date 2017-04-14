@@ -1,2 +1,2 @@
-# toci
+# Team of crazy ideas
 JavaScript trainings
